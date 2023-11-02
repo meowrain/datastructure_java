@@ -1,6 +1,8 @@
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class MyArrayList<E> {
+public class MyArrayList<E> implements Iterable<E>{
     // 存储数据得数组
     private E[] data;
     // 记录数组中元素得个数
@@ -132,4 +134,28 @@ public class MyArrayList<E> {
         return builder.toString();
     }
 
+    /* display方法 */
+    public void display() {
+        System.out.println("size = " + size + " cap = " + data.length);
+        System.out.println(Arrays.toString(data));
+    }
+
+
+    /* 迭代器实现 */
+    @Override
+    public Iterator<E> iterator(){
+        return new Iterator<E>() {
+            private int p = 0;
+
+            @Override
+            public boolean hasNext() {
+                return p != size;
+            }
+
+            @Override
+            public E next() {
+                return data[p++];
+            }
+        };
+    }
 }
