@@ -1,3 +1,11 @@
+/*
+ * @Author: meowrain meowrain@126.com
+ * @Date: 2023-11-02 21:50:56
+ * @LastEditors: meowrain meowrain@126.com
+ * @LastEditTime: 2023-11-03 22:26:24
+ * @FilePath: \datastructureWithJava\project01_arrayList\src\MyArrayList.java
+ * @Description: "顺序表实现"
+ */
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
