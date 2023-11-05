@@ -7,6 +7,13 @@
  * @Description: "单链表Java实现"
  */
 
+
+/*
+ *
+ * 这个代码中，索引是从首元节点才开始算的，也就是首元节点索引为0，所以索引值是比size小1的
+ *
+ * */
+
 import java.util.NoSuchElementException;
 
 public class SingleLinkedList<E> {
@@ -74,15 +81,26 @@ public class SingleLinkedList<E> {
     }
 
     /* 删除 */
-    public E removeLast(){
-        if(isEmpty()) {
+    public E removeFirst() {
+        if (isEmpty()) { //如果为空，抛出没有元素的异常
+            throw new NoSuchElementException();
+        }
+        Node<E> x = head.next; //保存头节点的下一个节点
+        head.next = head.next.next;//让头节点的next指针指向它的下下个节点
+        x.next = null; //让头节点的下一个节点的next指针指向null
+        size--; //删除元素，size - 1
+        return x.val; //返回头节点的下一个节点的val值
+    }
+
+    public E removeLast() {
+        if (isEmpty()) {
             throw new NoSuchElementException();
         }
         Node<E> x = getNode(size - 1);
         Node<E> temp;
-        if(size - 2 >= 0) {
+        if (size - 2 >= 0) {
             temp = getNode(size - 2);
-        }else {
+        } else {
             temp = head;
         }
         temp.next = tail;
@@ -90,6 +108,61 @@ public class SingleLinkedList<E> {
         size--;
         return x.val;
     }
+
+    public E remove(int index) { //删除指定索引位置的节点
+        /*
+         * 注意：这里删除节点是不包括头节点的，删的是首元节点
+         * 因为这个链表就是带头节点的链表，删节点也是删的非头节点
+         * index为0表示的要删除的是首元节点，1时为首元节点的下一个节点
+         * */
+        checkElementIndex(index); //检查索引是否合法
+        Node<E> p = getNode(index); //获取index索引位置的节点
+        Node<E> prev;
+        if (index - 1 >= 0) { //如果删除的index>=1，那要删除的就不是首元节点，是首元节点后面的节点
+            prev = getNode(index - 1);
+        } else { //否则，要删除的节点就是首元节点，这样的话，我们就把头节点的地址赋值给prev，此时prev 等同于 head
+            prev = head;
+        }
+        Node<E> next = p.next; //获取index索引位置节点的下一个节点
+        prev.next = next; //让前一个节点的next指针指向p节点的下一个节点
+        p.next = null; //然后让p节点的next指针指向null，断绝和原来链表的联系
+        size--;
+        return p.val;//返货删除的节点的val值
+    }
+
+    /* 查 */
+    public E getFirst() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        Node<E> first = getNode(0);
+        return first.val;
+    }
+
+    public E getLast() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        Node<E> last = getNode(size - 1);
+        return last.val;
+    }
+
+    public E get(int index) {
+        checkElementIndex(index);
+        Node<E> p = getNode(index);
+        return p.val;
+    }
+
+    /*改*/
+
+    public E set(int index,E element) {
+        checkElementIndex(index);
+        Node<E> p = getNode(index); //找到索引位置的节点
+        E oldVal = p.val; //存储旧值
+        p.val = element;//修改节点的val值
+        return oldVal;//返回旧值
+    }
+
     /* 额外工具函数实现 */
 
     public int size() {
