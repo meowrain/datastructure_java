@@ -14,9 +14,11 @@
  *
  * */
 
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class SingleLinkedList<E> {
+public class SingleLinkedList<E> implements Iterable<E> {
+
     private static class Node<E> { // 静态内部类，声明节点
         E val;
         Node<E> next;
@@ -47,7 +49,7 @@ public class SingleLinkedList<E> {
     }
 
     public void addLast(E element) {
-        Node<E> x = new Node<E>(null);
+        Node<E> x = new Node<E>(element);
         Node<E> temp;
         if (size - 1 >= 0) {
             temp = getNode(size - 1);
@@ -155,7 +157,7 @@ public class SingleLinkedList<E> {
 
     /*改*/
 
-    public E set(int index,E element) {
+    public E set(int index, E element) {
         checkElementIndex(index);
         Node<E> p = getNode(index); //找到索引位置的节点
         E oldVal = p.val; //存储旧值
@@ -201,4 +203,60 @@ public class SingleLinkedList<E> {
         return p;
     }
 
+    /* 合并链表 */
+    public static <E extends Comparable<E>> SingleLinkedList<E> mergeTwoLinkList(SingleLinkedList<E> list1, SingleLinkedList<E> list2) {
+        SingleLinkedList<E> newLinkList = new SingleLinkedList<>();
+        Node<E> p1 = list1.head.next;
+        Node<E> p2 = list2.head.next;
+        while (p1.val != null && p2.val != null) {
+            if (p1.val.compareTo(p2.val) > 0) {
+                newLinkList.addLast(p2.val);
+                p2 = p2.next;
+            } else {
+                newLinkList.addLast(p1.val);
+                p1 = p1.next;
+            }
+        }
+        while (p1.val != null) {
+            newLinkList.addLast(p1.val);
+            p1 = p1.next;
+        }
+        while (p2.val != null) {
+            newLinkList.addLast(p2.val);
+            p2 = p2.next;
+        }
+        return newLinkList;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+            Node<E> p = head.next;
+
+            @Override
+            public boolean hasNext() {
+                return p != tail;
+            }
+
+            @Override
+            public E next() {
+                if (!hasNext()) {
+                    throw new NoSuchElementException();
+                }
+                E val = p.val;
+                p = p.next; // 将指针移动到下一个节点
+                return val;
+            }
+        };
+    }
+    public void display() {
+        Node<E> current = head.next;
+        while (current != tail) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
 }
+
