@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/datastructureWithJava.iml" filepath="$PROJECT_DIR$/.idea/datastructureWithJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/innerclass/innerclass.iml" filepath="$PROJECT_DIR$/innerclass/innerclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project01_arrayList/project01_arrayList.iml" filepath="$PROJECT_DIR$/project01_arrayList/project01_arrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project02_linklist/project02_linklist.iml" filepath="$PROJECT_DIR$/project02_linklist/project02_linklist.iml" />
+    </modules>
+  </component>
+</project>
