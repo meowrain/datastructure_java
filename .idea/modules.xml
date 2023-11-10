@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/innerclass/innerclass.iml" filepath="$PROJECT_DIR$/innerclass/innerclass.iml" />
       <module fileurl="file://$PROJECT_DIR$/project01_arrayList/project01_arrayList.iml" filepath="$PROJECT_DIR$/project01_arrayList/project01_arrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/project02_linklist/project02_linklist.iml" filepath="$PROJECT_DIR$/project02_linklist/project02_linklist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project03_Stack/project03_Stack.iml" filepath="$PROJECT_DIR$/project03_Stack/project03_Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project03_tree/project03_tree.iml" filepath="$PROJECT_DIR$/project03_tree/project03_tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project04_Queue/project04_Queue.iml" filepath="$PROJECT_DIR$/project04_Queue/project04_Queue.iml" />
     </modules>
   </component>
 </project>
