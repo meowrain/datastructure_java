@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_basic/annotation/annotation.iml" filepath="$PROJECT_DIR$/java_basic/annotation/annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/datastructureWithJava.iml" filepath="$PROJECT_DIR$/.idea/datastructureWithJava.iml" />
-      <module fileurl="file://$PROJECT_DIR$/innerclass/innerclass.iml" filepath="$PROJECT_DIR$/innerclass/innerclass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/project01_arrayList/project01_arrayList.iml" filepath="$PROJECT_DIR$/project01_arrayList/project01_arrayList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/project02_linklist/project02_linklist.iml" filepath="$PROJECT_DIR$/project02_linklist/project02_linklist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/project03_Stack/project03_Stack.iml" filepath="$PROJECT_DIR$/project03_Stack/project03_Stack.iml" />
-      <module fileurl="file://$PROJECT_DIR$/project04_Queue/project04_Queue.iml" filepath="$PROJECT_DIR$/project04_Queue/project04_Queue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/project05_tree/project05_tree.iml" filepath="$PROJECT_DIR$/project05_tree/project05_tree.iml" />
-      <module fileurl="file://$PROJECT_DIR$/thread_demo/thread_demo.iml" filepath="$PROJECT_DIR$/thread_demo/thread_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure/project01_arrayList/project01_arrayList.iml" filepath="$PROJECT_DIR$/datastructure/project01_arrayList/project01_arrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure/project02_linklist/project02_linklist.iml" filepath="$PROJECT_DIR$/datastructure/project02_linklist/project02_linklist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure/project03_Stack/project03_Stack.iml" filepath="$PROJECT_DIR$/datastructure/project03_Stack/project03_Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure/project04_Queue/project04_Queue.iml" filepath="$PROJECT_DIR$/datastructure/project04_Queue/project04_Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datastructure/project05_tree/project05_tree.iml" filepath="$PROJECT_DIR$/datastructure/project05_tree/project05_tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_basic/thread_demo/thread_demo.iml" filepath="$PROJECT_DIR$/java_basic/thread_demo/thread_demo.iml" />
     </modules>
   </component>
 </project>

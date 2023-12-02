@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/loginWifiSXAU/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/loginWifiSXAU/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mybatis_learn/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mybatis_learn/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/project05_tree/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/project05_tree/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datastructure/project05_tree/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/datastructure/project05_tree/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_project/mybatis_learn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_project/mybatis_learn/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_project/mybatis_learn02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_project/mybatis_learn02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/loginWifiSXAU/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project/loginWifiSXAU/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_learn/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_learn/src/main/resources" charset="UTF-8" />
   </component>
 </project>

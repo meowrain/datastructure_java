@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="loginWifiSXAU" />
+        <module name="spring_learn" />
         <module name="mybatis_learn" />
+        <module name="loginWifiSXAU" />
+        <module name="mybatis_learn02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
