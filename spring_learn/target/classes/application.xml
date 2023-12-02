@@ -6,11 +6,24 @@
     <!--    <bean name="student" class="com.test.bean.Student" scope="prototype"/>-->
     <!--我们发现，最后得到的结果为true，那么说明每次从IoC容器获取到的对象，始终都是同一个，默认情况下，通过IoC容器进行管理的Bean都是单例模式的，这个对象只会被创建一次。
             如果我们希望每次拿到的对象都是一个新的，我们也可以将其作用域进行修改：-->
-    <bean name="student" class="com.test.bean.Student" scope="prototype" lazy-init="true">
+    <bean name="student" class="com.test.bean.Student" scope="singleton" lazy-init="true" init-method="init" destroy-method="destroy">
 
 <!--        通过构造方法赋值-->
         <constructor-arg name="teacher" ref="teacher" />
-        <constructor-arg name="name" value="" />
+        <constructor-arg index="1" value="" />
+        <property name="list">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+<property name="map">
+    <map>
+        <entry key="1" value="小明" />
+        <entry key="2" value="小红"/>
+    </map>
+</property>
 <!--        <property name="teacher" ref="teacher" />   通过setTeacher方法赋值 -->
     </bean>
     <!--          当然，如果我们希望单例模式下的Bean不用再一开始就加载，而是一样等到需要时再加载（加载后依然会被容器存储，之后一直使用这个对象了，不会再创建新的）我们也可以开启懒加载：>-->

@@ -2,13 +2,25 @@ package com.test.bean;
 
 import lombok.ToString;
 
+import java.util.List;
+import java.util.Map;
+
 @ToString
 public class Student {
     String name = "xiaoming";
+    private List<String> list;
+    private Map<Integer,String> map;
     private Teacher teacher;
     public Student(Teacher teacher,String name) {
         this.teacher =teacher;
         this.name = name;
+    }
+    public void init(){
+        System.out.println("我是对象初始化时要做的事情！");
+    }
+
+    public void destroy(){
+        System.out.println("我是对象销毁时要做的事情！");
     }
 
     public void hello() {
@@ -19,10 +31,24 @@ public class Student {
     public void study(){
         teacher.teach();
     }
+
+    public void outputList() {
+        for(String str : list) {
+            System.out.println(str);
+        }
+    }
     public void setName(String name) {
         this.name = name;
     }
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
+    }
+
+    public void setList(List<String> list) {
+        this.list = list;
+    }
+
+    public void setMap(Map<Integer, String> map) {
+        this.map = map;
     }
 }
