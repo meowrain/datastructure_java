@@ -7,8 +7,10 @@ import org.example.entity.Teacher;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @Configuration
+@EnableAsync
 @Lazy(value = true)
 @Scope(scopeName = "prototype")
 @PropertySource("classpath:application.properties")

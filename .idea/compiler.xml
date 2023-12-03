@@ -9,9 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring_learn" />
         <module name="mybatis_learn" />
-        <module name="loginWifiSXAU" />
         <module name="lwjg_demo" />
         <module name="mybatis_learn02" />
+        <module name="loginWifiSXAU" />
+        <module name="spring_learn03" />
         <module name="spring_learn02" />
       </profile>
     </annotationProcessing>
