@@ -10,7 +10,10 @@
         <module name="spring_learn" />
         <module name="mybatis_learn" />
         <module name="lwjg_demo" />
+        <module name="BookManage" />
         <module name="mybatis_learn02" />
+        <module name="spring_mvc_learn" />
+        <module name="spring_mvc_learn_annotation" />
         <module name="loginWifiSXAU" />
         <module name="spring_learn03" />
         <module name="spring_learn02" />

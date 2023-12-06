@@ -6,7 +6,7 @@
     <!--    <bean name="student" class="com.test.bean.Student" scope="prototype"/>-->
     <!--我们发现，最后得到的结果为true，那么说明每次从IoC容器获取到的对象，始终都是同一个，默认情况下，通过IoC容器进行管理的Bean都是单例模式的，这个对象只会被创建一次。
             如果我们希望每次拿到的对象都是一个新的，我们也可以将其作用域进行修改：-->
-    <bean name="student" class="com.test.bean.Student" scope="singleton" lazy-init="true" init-method="init" destroy-method="destroy">
+    <bean name="student" class="com.test.bean.Student" scope="prototype" lazy-init="true" init-method="init" destroy-method="destroy">
 
 <!--        通过构造方法赋值-->
         <constructor-arg name="teacher" ref="teacher" />

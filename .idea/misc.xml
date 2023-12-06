@@ -15,6 +15,12 @@
         <option value="$PROJECT_DIR$/spring_learn02/pom.xml" />
         <option value="$PROJECT_DIR$/lwjg_demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring_learn03/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mvc_learn/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mvc/spring_mvc_learn/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mvc_learn_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mvc_learn/spring_mvc_learn_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mvc/spring_mvc_learn_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/BookManage/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
