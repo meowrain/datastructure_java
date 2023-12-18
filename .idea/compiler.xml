@@ -15,11 +15,13 @@
         <module name="spring_mvc_learn" />
         <module name="spring_mvc_learn_annotation" />
         <module name="loginWifiSXAU" />
+        <module name="jdbc_learn" />
         <module name="spring_learn03" />
         <module name="spring_learn02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.hspedu" target="17" />
       <module name="project05_tree" target="1.8" />
     </bytecodeTargetLevel>
   </component>

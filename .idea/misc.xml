@@ -21,13 +21,17 @@
         <option value="$PROJECT_DIR$/spring_mvc_learn/spring_mvc_learn_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/spring_mvc/spring_mvc_learn_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/BookManage/pom.xml" />
+        <option value="$PROJECT_DIR$/com.hspedu/pom.xml" />
+        <option value="$PROJECT_DIR$/jdbc_learn/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/com.hspedu/pom.xml" />
         <option value="$PROJECT_DIR$/project03_tree/pom.xml" />
       </set>
     </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

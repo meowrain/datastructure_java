@@ -3,5 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/BookManage/src/main/java/book/manage/mapper/BookMapper.java" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/BookManage/src/main/java/book/manage/mapper/StudentMapper.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_learn/src/main/java/com/hspedu/jdbc/myjdbc/Jdbc01.java" dialect="GenericSQL" />
+    <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
